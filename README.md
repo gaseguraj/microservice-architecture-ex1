@@ -2,6 +2,8 @@
 - Microservices
 - Eureka Server
 - H2 DB in memory
+- Hibernate
+- JPA
 - RestTemplate
 
 # Endpoints
