@@ -22,11 +22,9 @@ public class PredictionController {
     PredictionService predictionService;
 
     @GetMapping("{name}")
-    public String getPrediction(@PathVariable String name) {
-        logger.debug("Name: " + name);
+    public Prediction getPrediction(@PathVariable String name) {
         System.out.println("Name: " + name);
-        predictionService.getPrediction();
-        return name;
+        return predictionService.getPrediction(name);
 
     }
 }
